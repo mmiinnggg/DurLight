@@ -1,6 +1,5 @@
 # Introduction
-PotentLight, an innovative RL-based solution for adaptive traffic signal control, rooted in the theoretical framework of MP control
-
+DurLight, an innovative RL-based solution tailored for adaptive traffic signal control, which empowers agent autonomy by facilitating flexible adjustments in action duration and dynamic signal phase invocation.
 # Environment & Dependency:
 - This code has been tested on Python 3.7, and compatibility with other versions is not guaranteed. It is recommended to use Python versions 3.5 and above.
 - For installing CityFlow, it is recommended to follow the instructions provided at https://cityflow.readthedocs.io/en/latest/install.html.
@@ -19,8 +18,8 @@ PotentLight, an innovative RL-based solution for adaptive traffic signal control
 # Files
 * ``runexp.py``
   The main file of experiments where the args can be changed.
-  
- > The **arg '--dataset'** requires special attention, and it should be consistent with the dataset being used. For example, config1, config2, and config3 correspond to '--dataset==jinan', while config4 corresponds to '--dataset==hangzhou'.
+
+ > The **arg '--dataset'** requires special attention, and it should be consistent with the dataset being used. For example, the datasets corresponding to road networks such as Jinan, Hangzhou, and Syn3x3 should have names that respectively match '--dataset==jinan', '--dataset==hangzhou', and '--dataset==3x3'.
  
 * ``agent.py``
   Implement RL agent for proposed method.
@@ -34,18 +33,9 @@ PotentLight, an innovative RL-based solution for adaptive traffic signal control
 * ``metric/travel_time.py`` & ``metric/throughput.py``
   Two representative measures as evaluation criteria to digitally assess the performance of the method.
 
+* ``data.zip``
+   Containing all the used traffic file and road networks datasets. When extracting the 'data.zip' file, the resulting files will be stored in the 'project dir/data' directory.
 
-# Datasets
-
-This repo repository includes four real-world datasets. When extracting the 'data.zip' file, the resulting files will be stored in the 'project dir/data' directory.
- > The **storage path -- "dir"** to each dataset, as written in its corresponding JSON file, should be accurately specified based on your local machine's configuration.
-  
-| Configurations |City| Traffic flow |
-|----------------|--|---------|
-| Config 1       |Jinan | anon_3_4_jinan_real     |
-| Config 2       |Jinan | anon_3_4_jinan_real_2000   |
-| Config 3       |Jinan | anon_3_4_jinan_real_2500  |
-| Config 4       |Hangzhou | anon_4_4_hangzhou_real   |
 
 
 # How to run
