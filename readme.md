@@ -41,6 +41,30 @@ DurLight, an innovative RL-based solution tailored for adaptive traffic signal c
 This repo repository includes four real-world datasets. When extracting the 'data.zip' file, the resulting files will be stored in the 'project dir/data' directory.
  > The **storage path -- "dir"** to each dataset, as written in its corresponding JSON file, should be accurately specified based on your local machine's configuration.
 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+td[colspan] {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Table with Separated City Rows</h2>
+
 <table>
   <tr>
     <th> Type </th>
@@ -49,66 +73,78 @@ This repo repository includes four real-world datasets. When extracting the 'dat
     <th> Traffic flow</th>
   </tr>
   <tr>
-    <td> Real </td>
-    <td>
-      Jinan <br>
-      Huangzhou
-    </td>
-    <td>
-      Jinan <br>
-      Jinan_2000  <br>
-      Jinan_2500 <br>
-      Huangzhou <br>
-      Hangzhou_5734 <br>
-      Hangzhou_5816 <br>
-    </td>
-    <td>
-      anon_3_4_jinan_real <br>
-      anon_3_4_jinan_real_2000  <br>
-      anon_3_4_jinan_real_2500 <br>
-      anon_4_4_hangzhou_real <br>
-      anon_4_4_hangzhou_real_5734 <br>
-      anon_4_4_hangzhou_real_5816 <br>
-    </td>
+    <td rowspan="6"> Real </td>
+    <td colspan="3"> Jinan </td>
   </tr>
   <tr>
-    <td> Synthetic </td>
+    <td> Jinan </td>
+    <td> Jinan </td>
+    <td> anon_3_4_jinan_real </td>
+  </tr>
+  <tr>
+    <td> Jinan </td>
+    <td> Jinan_2000 </td>
+    <td> anon_3_4_jinan_real_2000 </td>
+  </tr>
+  <tr>
+    <td> Jinan </td>
+    <td> Jinan_2500 </td>
+    <td> anon_3_4_jinan_real_2500 </td>
+  </tr>
+  <tr>
+    <td colspan="3"> Hangzhou </td>
+  </tr>
+  <tr>
+    <td> Hangzhou </td>
+    <td> Hangzhou </td>
+    <td> anon_4_4_hangzhou_real </td>
+  </tr>
+  <tr>
+    <td> Hangzhou </td>
+    <td> Hangzhou_5734 </td>
+    <td> anon_4_4_hangzhou_real_5734 </td>
+  </tr>
+  <tr>
+    <td> Hangzhou </td>
+    <td> Hangzhou_5816 </td>
+    <td> anon_4_4_hangzhou_real_5816 </td>
+  </tr>
+  <tr>
+    <td rowspan="6"> Synthetic </td>
     <td> 3x3 </td>
-    <td>
-      Syn_300_0.3 <br>
-      Syn_300_0.6 <br>
-      Syn_500_0.3 <br>
-      Syn_500_0.6 <br>
-      Syn_700_0.3 <br>
-      Syn_700_0.6 <br>
-    </td>
-    <td>
-      anon_3_3_300_0.3_synthetic <br>
-      anon_3_3_300_0.6_synthetic <br>
-      anon_3_3_500_0.3_synthetic <br>
-      anon_3_3_500_0.6_synthetic <br>
-      anon_3_3_700_0.3_synthetic <br>
-      anon_3_3_700_0.6_synthetic <br>
-    </td>
+    <td> Syn_300_0.3 </td>
+    <td> anon_3_3_300_0.3_synthetic </td>
+  </tr>
+  <tr>
+    <td> 3x3 </td>
+    <td> Syn_300_0.6 </td>
+    <td> anon_3_3_300_0.6_synthetic </td>
+  </tr>
+  <tr>
+    <td> 3x3 </td>
+    <td> Syn_500_0.3 </td>
+    <td> anon_3_3_500_0.3_synthetic </td>
+  </tr>
+  <tr>
+    <td> 3x3 </td>
+    <td> Syn_500_0.6 </td>
+    <td> anon_3_3_500_0.6_synthetic </td>
+  </tr>
+  <tr>
+    <td> 3x3 </td>
+    <td> Syn_700_0.3 </td>
+    <td> anon_3_3_700_0.3_synthetic </td>
+  </tr>
+  <tr>
+    <td> 3x3 </td>
+    <td> Syn_700_0.6 </td>
+    <td> anon_3_3_700_0.6_synthetic </td>
   </tr>
 </table>
 
-| Type | Dataset | Identifier | Traffic flow |
-|-----------|-----------|------------|-----------------------------|
-| Real      |Jinan | Jinan | anon_3_4_jinan_real     |
-|           |      | Jinan_2000 | anon_3_4_jinan_real_2000   |
-|           |      | Jinan_2500 | anon_3_4_jinan_real_2500  |
-|           |-----------|------------|-----------------------------|
-|           | Huangzhou | Hangzhou | anon_4_4_hangzhou_real   |
-|           |           | Hangzhou_5734 | anon_4_4_hangzhou_real_5734   |
-|           |           | Hangzhou_5816 | anon_4_4_hangzhou_real_5816 |
-|-----------|-----------|------------|-----------------------------|
-| Synthetic | 3x3 | Syn_300_0.3 | anon_3_3_300_0.3_synthetic   |
-|           |     | Syn_300_0.6 | anon_3_3_300_0.6_synthetic   |
-|           |     | Syn_500_0.3 | anon_3_3_500_0.3_synthetic   |
-|           |     | Syn_500_0.6 | anon_3_3_500_0.6_synthetic   |
-|           |     | Syn_700_0.3 | anon_3_3_700_0.3_synthetic   |
-|           |     | Syn_700_0.6 | anon_3_3_700_0.6_synthetic   |
+</body>
+</html>
+
 
 
 # How to run
