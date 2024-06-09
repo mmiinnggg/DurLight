@@ -36,6 +36,27 @@ DurLight, an innovative RL-based solution tailored for adaptive traffic signal c
 * ``data.zip``
    Containing all the used traffic file and road networks datasets. When extracting the 'data.zip' file, the resulting files will be stored in the 'project dir/data' directory.
 
+# Datasets
+
+This repo repository includes four real-world datasets. When extracting the 'data.zip' file, the resulting files will be stored in the 'project dir/data' directory.
+ > The **storage path -- "dir"** to each dataset, as written in its corresponding JSON file, should be accurately specified based on your local machine's configuration.
+  
+| Type | Dataset | Identifier | Traffic flow |
+|-----------|-----------|------------|-----------------------------|
+| Real      |Jinan | Jinan | anon_3_4_jinan_real     |
+|           |      | Jinan_2000 | anon_3_4_jinan_real_2000   |
+|           |      | Jinan_2500 | anon_3_4_jinan_real_2500  |
+|           |-----------|------------|-----------------------------|
+|           | Huangzhou | Hangzhou | anon_4_4_hangzhou_real   |
+|           |           | Hangzhou_5734 | anon_4_4_hangzhou_real_5734   |
+|           |           | Hangzhou_5816 | anon_4_4_hangzhou_real_5816 |
+|-----------|-----------|------------|-----------------------------|
+| Synthetic | 3x3 | Syn_300_0.3 | anon_3_3_300_0.3_synthetic   |
+|           |     | Syn_300_0.6 | anon_3_3_300_0.6_synthetic   |
+|           |     | Syn_500_0.3 | anon_3_3_500_0.3_synthetic   |
+|           |     | Syn_500_0.6 | anon_3_3_500_0.6_synthetic   |
+|           |     | Syn_700_0.3 | anon_3_3_700_0.3_synthetic   |
+|           |     | Syn_700_0.6 | anon_3_3_700_0.6_synthetic   |
 
 
 # How to run
