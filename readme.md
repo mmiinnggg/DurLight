@@ -40,7 +40,59 @@ DurLight, an innovative RL-based solution tailored for adaptive traffic signal c
 
 This repo repository includes four real-world datasets. When extracting the 'data.zip' file, the resulting files will be stored in the 'project dir/data' directory.
  > The **storage path -- "dir"** to each dataset, as written in its corresponding JSON file, should be accurately specified based on your local machine's configuration.
-  
+
+<table>
+  <tr>
+    <th> Type </th>
+    <th> Dataset </th>
+    <th> Identifier </th>
+    <th> Traffic flow</th>
+  </tr>
+  <tr>
+    <td> Real </td>
+    <td>
+      Jinan <br>
+      Huangzhou
+    </td>
+    <td>
+      Jinan <br>
+      Jinan_2000  <br>
+      Jinan_2500 <br>
+      Huangzhou <br>
+      Hangzhou_5734 <br>
+      Hangzhou_5816 <br>
+    </td>
+    <td>
+      anon_3_4_jinan_real <br>
+      anon_3_4_jinan_real_2000  <br>
+      anon_3_4_jinan_real_2500 <br>
+      anon_4_4_hangzhou_real <br>
+      anon_4_4_hangzhou_real_5734 <br>
+      anon_4_4_hangzhou_real_5816 <br>
+    </td>
+  </tr>
+  <tr>
+    <td> Synthetic </td>
+    <td> 3x3 </td>
+    <td>
+      Syn_300_0.3 <br>
+      Syn_300_0.6 <br>
+      Syn_500_0.3 <br>
+      Syn_500_0.6 <br>
+      Syn_700_0.3 <br>
+      Syn_700_0.6 <br>
+    </td>
+    <td>
+      anon_3_3_300_0.3_synthetic <br>
+      anon_3_3_300_0.6_synthetic <br>
+      anon_3_3_500_0.3_synthetic <br>
+      anon_3_3_500_0.6_synthetic <br>
+      anon_3_3_700_0.3_synthetic <br>
+      anon_3_3_700_0.6_synthetic <br>
+    </td>
+  </tr>
+</table>
+
 | Type | Dataset | Identifier | Traffic flow |
 |-----------|-----------|------------|-----------------------------|
 | Real      |Jinan | Jinan | anon_3_4_jinan_real     |
