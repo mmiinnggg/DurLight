@@ -50,7 +50,7 @@ This repo repository includes four real-world datasets. When extracting the 'dat
   </tr>
   <tr>
     <td rowspan="6"> Real </td>
-    <td rowspan="3"> Jinan </td>
+    <td rowspan="3"> inan </td>
     <td> Jinan </td>
     <td> anon_3_4_jinan_real </td>
   </tr>
@@ -63,7 +63,7 @@ This repo repository includes four real-world datasets. When extracting the 'dat
     <td> anon_3_4_jinan_real_2500 </td>
   </tr>
   <tr>
-    <td rowspan="3"> Huangzhou </td>
+    <td rowspan="3"> huangzhou </td>
         <td> Hangzhou </td>
     <td> anon_4_4_hangzhou_real </td>
   </tr>
