@@ -50,7 +50,7 @@ This repo repository includes four real-world datasets. When extracting the 'dat
   </tr>
   <tr>
     <td rowspan="6"> Real </td>
-    <td rowspan="3"> inan </td>
+    <td rowspan="3"> jinan </td>
     <td> Jinan </td>
     <td> anon_3_4_jinan_real </td>
   </tr>
