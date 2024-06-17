@@ -7,8 +7,6 @@ from cityflow_env import CityFlowEnvM
 from agent import DQNAgent
 from metric.travel_time import TravelTimeMetric
 from metric.throughput import ThroughputMetric
-from metric.speed_score import SpeedScoreMetric
-from metric.minmax_waiting_time import MaxWaitingTimeMetric
 from utility import *
 
 import os
@@ -38,7 +36,7 @@ log_name = args.log_dir + '/'+ args.identifier + '_potent_' + str(args.eta) + '_
 CsvFile = open(log_name, 'w')
 CsvWriter = csv.writer(CsvFile)
 CsvWriter.writerow(
-    ["Mode", "episode", "step", "travel_time", "throughput", "speed score", "max waiting", "mean_episode_reward"])
+    ["Mode", "episode", "step", "travel_time", "throughput", "mean_episode_reward"])
 CsvFile.close()
 
 
@@ -78,7 +76,7 @@ def build(in_args = args):
         agents[id_] = agent
     print("agents built.")
 
-    metrics = [TravelTimeMetric(world), ThroughputMetric(world), SpeedScoreMetric(world), MaxWaitingTimeMetric(world)]
+    metrics = [TravelTimeMetric(world), ThroughputMetric(world)]
 
     return config, world, agents, metrics
 
@@ -166,7 +164,7 @@ def train(in_args=args):
             CsvFile = open(log_name, 'a+')
             CsvWriter = csv.writer(CsvFile)
             CsvWriter.writerow(
-                ["-", e + 1, i, metrics[0].eval(), metrics[1].eval(), metrics[2].eval(), metrics[3].eval(),
+                ["-", e + 1, i, metrics[0].eval(), metrics[1].eval()
                  np.mean(list(mean_reward.values()))])
             CsvFile.close()
 
@@ -242,7 +240,7 @@ def test(in_args = args):
         CsvFile = open(log_name, 'a+')
         CsvWriter = csv.writer(CsvFile)
         CsvWriter.writerow(
-            ["test", "-", i, metrics[0].eval(), metrics[1].eval(), metrics[2].eval(), metrics[3].eval()])
+            ["test", "-", i, metrics[0].eval(), metrics[1].eval()])
         CsvFile.close()
 
     return world.eng.get_average_travel_time()
