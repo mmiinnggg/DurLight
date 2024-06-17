@@ -164,7 +164,7 @@ def train(in_args=args):
             CsvFile = open(log_name, 'a+')
             CsvWriter = csv.writer(CsvFile)
             CsvWriter.writerow(
-                ["-", e + 1, i, metrics[0].eval(), metrics[1].eval()
+                ["-", e + 1, i, metrics[0].eval(), metrics[1].eval(),
                  np.mean(list(mean_reward.values()))])
             CsvFile.close()
 
